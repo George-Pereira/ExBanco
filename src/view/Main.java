@@ -16,6 +16,7 @@ public class Main
 		for(int CTA = 0; CTA<20;CTA++) 
 		{
 			Thread t = new ThreadTransacoes((R.nextInt(1)+ 1), (R.nextDouble()*10000), (R.nextDouble()), semaforo);
+			t.start();
 		}
 	}
 }
